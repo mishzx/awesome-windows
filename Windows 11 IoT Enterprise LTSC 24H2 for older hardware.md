@@ -60,7 +60,9 @@ A copy is also available to download from Archive.org:
 - Insert the USB Stick and turn on or restart your computer.
 - You can turn off secure boot (recommended) and TMP in your PC BIOS, the LTSC version of Windows 11 doesn't need it.
 - Follow on-screen instructions to install Windows 11 IoT Enterprise LTSC
-- If you are stuck on **"Let's connect you to a network"** or the Microsoft account sign-in screen, press `Shift+F10` to open a Command Prompt window
+  - Select "I don't have a product key" - you can enter the product key later or use other forms of activation.
+  - Select "I don't have internet" - this will skip the Microsoft Account sign-in and create a local account.
+- If you are stuck on **"Let's connect you to a network"** or the Microsoft Account sign-in screen, press `Shift+F10` to open a Command Prompt window
   - Type `start ms-cxh:localonly` and press Enter.
     - A local account creation window appears.
   - Alternatively type `OOBE\BYPASSNRO` and press Enter.
@@ -94,8 +96,6 @@ Windows 11 has hidden many useful context items in a 2nd window (e.g. delete, pr
 ```cmd
     reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
 ```
-- In the menu that appears, press 1 for "HWID".
-- Then press the number corresponding to "Activate Windows".
 
 #### 2. Disable Windows 11 Memory Integrity on Intel 6th Gen & older
 
